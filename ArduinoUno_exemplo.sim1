@@ -1,0 +1,43 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="true" Show_Val="false" Pos="804,488" rotation="0" hflip="1" vflip="1" label="Uno-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="exemplo_1/exemploArduinoIDE_1/build/arduino.avr.uno/exemploArduinoIDE_1.ino.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
+</item>
+
+<item itemtype="Led" CircId="Led-2" mainComp="false" Show_id="false" Show_Val="false" Pos="628,552" rotation="-270" hflip="1" vflip="1" label="Led-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Green" Grounded="false" Threshold="3.5 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-3" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="792,584" rotation="0" hflip="1" vflip="1" label="Resistor-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Ground" CircId="Ground-9" mainComp="false" Show_id="false" Show_Val="false" Pos="628,692" rotation="0" hflip="1" vflip="1" label="Ground-9" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Switch" CircId="Switch-36" mainComp="false" Show_id="false" Show_Val="false" Pos="728,520" rotation="0" hflip="1" vflip="1" label="Switch-36" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
+
+<item itemtype="Tunnel" CircId="Tunnel-42" mainComp="false" Show_id="false" Show_Val="false" Pos="768,584" rotation="0" hflip="1" vflip="1" label="Tunnel-42" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="9 pwm" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-44" mainComp="false" Show_id="false" Show_Val="false" Pos="628,520" rotation="-270" hflip="1" vflip="1" label="Tunnel-44" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="9 pwm" IsBus="false" />
+
+<item itemtype="AudioOut" CircId="AudioOut-51" mainComp="false" Show_id="false" Show_Val="false" Pos="876,472" rotation="-450" hflip="-1" vflip="1" label="AudioOut-51" idLabPos="-20,-36" labelrot="0" valLabPos="-16,20" valLabRot="0" Buzzer="true" Impedance="100 Ω" Frequency="4000 Hz" />
+
+<item itemtype="Push" CircId="Push-60" mainComp="false" Show_id="false" Show_Val="false" Pos="732,684" rotation="0" hflip="1" vflip="1" label="Push-60" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Connector" uid="connector-61" startpinid="Resistor-3-rPin" endpinid="Uno-1-9" pointList="808,584,812,584" />
+
+<item itemtype="Connector" uid="connector-62" startpinid="Ground-9-Gnd" endpinid="Led-2-rPin" pointList="628,676,628,568" />
+
+<item itemtype="Connector" uid="connector-63" startpinid="Switch-36-switch0pinN" endpinid="Uno-1-2" pointList="744,520,812,520" />
+
+<item itemtype="Connector" uid="connector-64" startpinid="Switch-36-pinP0" endpinid="Uno-1-GND2" pointList="712,520,712,624,812,624" />
+
+<item itemtype="Connector" uid="connector-65" startpinid="Tunnel-42-pin" endpinid="Resistor-3-lPin" pointList="768,584,776,584" />
+
+<item itemtype="Connector" uid="connector-66" startpinid="Tunnel-44-pin" endpinid="Led-2-lPin" pointList="628,520,628,536" />
+
+<item itemtype="Connector" uid="connector-67" startpinid="AudioOut-51-lPin" endpinid="Uno-1-8" pointList="884,488,884,576,812,576" />
+
+<item itemtype="Connector" uid="connector-68" startpinid="AudioOut-51-rPin" endpinid="Uno-1-GND0" pointList="876,488,876,568,956,568" />
+
+<item itemtype="Connector" uid="connector-69" startpinid="Push-60-switch0pinN" endpinid="Uno-1-7" pointList="748,684,748,560,812,560" />
+
+<item itemtype="Connector" uid="connector-70" startpinid="Push-60-pinP0" endpinid="Uno-1-GND1" pointList="716,684,956,684,956,576" />
+
+</circuit>
