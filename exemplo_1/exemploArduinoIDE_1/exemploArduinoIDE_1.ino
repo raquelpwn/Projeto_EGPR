@@ -18,6 +18,11 @@ void setup() {
   pinMode(BOTAO, INPUT_PULLUP);
   pinMode(LED_VERMELHO, OUTPUT);
   pinMode(LED_VERDE, OUTPUT);
+
+  // iniciar com tudo desligado
+  digitalWrite(LED_VERDE, LOW);
+  digitalWrite(LED_VERMELHO, LOW);
+  digitalWrite(BUZZER, LOW);
 }
 
 void loop() {
@@ -28,30 +33,30 @@ void loop() {
     while(digitalRead(BOTAO)== LOW); // espera soltar o botão
   }
 
+ if(!armado){
+  digitalWrite(LED_VERDE, LOW); 
+  digitalWrite(LED_VERMELHO, LOW);
+  digitalWrite(BUZZER, LOW);
+  return; // sai do loop e espera armar novamente
+ }
+   
   // Leitura dos sensores
   int estado1 = digitalRead(SENSOR1);
   int estado2 = digitalRead(SENSOR2);
   int estado3 = digitalRead(SENSOR3);
   int estado4 = digitalRead(SENSOR4);
   
-  if(armado){
-    // Se qualquer sensor estiver ABERTO (LOW)
-    if(estado1 == LOW || estado2 == LOW || estado3 == LOW || estado4 == LOW){
-      digitalWrite(LED_VERMELHO, HIGH);
-      digitalWrite(LED_VERDE, LOW);
-      digitalWrite(BUZZER, HIGH);
-    }else{
-     digitalWrite(LED_VERMELHO, LOW);
-     digitalWrite(LED_VERDE, HIGH);
-     digitalWrite(BUZZER, LOW);
-    }
-}
-// Sistema DESARMADO
-else{
-  digitalWrite(LED_VERMELHO, LOW);
-  digitalWrite(LED_VERDE, HIGH);
-  digitalWrite(BUZZER, LOW);
-}
+  // Aqui: disparamos quando SENSOR == HIGH (ou seja, aberto)]
+  if(armado && (estado1 == HIGH || estado2 == HIGH || estado3 == HIGH || estado4 == HIGH)){
+    digitalWrite(LED_VERDE, LOW); // apaga o verde
+    digitalWrite(LED_VERMELHO, HIGH); // acende vermelho
+    digitalWrite(BUZZER, HIGH);
+  }else{ // todos os sensores fechados
+    digitalWrite(LED_VERMELHO, LOW);
+    digitalWrite(LED_VERDE, HIGH); // acende
+    digitalWrite(BUZZER, LOW); // desliga
+  }
 
-delay(100); // pequena pausa pra estabilidade
-}
+  delay(100); // pausa pequena
+} 
+ 
