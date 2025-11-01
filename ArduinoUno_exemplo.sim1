@@ -4,17 +4,17 @@
 <mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="exemplo_1/exemploArduinoIDE_1/build/arduino.avr.uno/exemploArduinoIDE_1.ino.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
 </item>
 
-<item itemtype="Led" CircId="Led-2" mainComp="false" Show_id="false" Show_Val="false" Pos="500,540" rotation="-270" hflip="1" vflip="1" label="Led-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Red" Grounded="false" Threshold="1.8 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+<item itemtype="Led" CircId="Led-2" mainComp="false" Show_id="false" Show_Val="false" Pos="496,536" rotation="-270" hflip="1" vflip="1" label="Led-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Red" Grounded="false" Threshold="1.8 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
 
 <item itemtype="Resistor" CircId="Resistor-3" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="792,584" rotation="0" hflip="1" vflip="1" label="Resistor-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
 
-<item itemtype="Ground" CircId="Ground-9" mainComp="false" Show_id="false" Show_Val="false" Pos="500,664" rotation="0" hflip="1" vflip="1" label="Ground-9" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+<item itemtype="Ground" CircId="Ground-9" mainComp="false" Show_id="false" Show_Val="false" Pos="496,660" rotation="0" hflip="1" vflip="1" label="Ground-9" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
 <item itemtype="Switch" CircId="Switch-36" mainComp="false" Show_id="false" Show_Val="false" Pos="712,532" rotation="0" hflip="1" vflip="1" label="Switch-36" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
 
 <item itemtype="Tunnel" CircId="Tunnel-42" mainComp="false" Show_id="false" Show_Val="false" Pos="768,584" rotation="0" hflip="1" vflip="1" label="Tunnel-42" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="9 pwm" IsBus="false" />
 
-<item itemtype="Tunnel" CircId="Tunnel-44" mainComp="false" Show_id="false" Show_Val="false" Pos="500,492" rotation="-270" hflip="1" vflip="1" label="Tunnel-44" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="9 pwm" IsBus="false" />
+<item itemtype="Tunnel" CircId="Tunnel-44" mainComp="false" Show_id="false" Show_Val="false" Pos="496,488" rotation="-270" hflip="1" vflip="1" label="Tunnel-44" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="9 pwm" IsBus="false" />
 
 <item itemtype="AudioOut" CircId="AudioOut-51" mainComp="false" Show_id="false" Show_Val="false" Pos="876,472" rotation="-450" hflip="-1" vflip="1" label="AudioOut-51" idLabPos="-20,-36" labelrot="0" valLabPos="-16,20" valLabRot="0" Buzzer="true" Impedance="100 Ω" Frequency="4000 Hz" />
 
@@ -44,13 +44,13 @@
 
 <item itemtype="Connector" uid="connector-61" startpinid="Resistor-3-rPin" endpinid="Uno-1-9" pointList="808,584,812,584" />
 
-<item itemtype="Connector" uid="connector-62" startpinid="Ground-9-Gnd" endpinid="Led-2-rPin" pointList="500,648,500,556" />
+<item itemtype="Connector" uid="connector-62" startpinid="Ground-9-Gnd" endpinid="Led-2-rPin" pointList="496,644,496,552" />
 
 <item itemtype="Connector" uid="connector-63" startpinid="Switch-36-switch0pinN" endpinid="Uno-1-2" pointList="728,532,812,532,812,520" />
 
 <item itemtype="Connector" uid="connector-65" startpinid="Tunnel-42-pin" endpinid="Resistor-3-lPin" pointList="768,584,776,584" />
 
-<item itemtype="Connector" uid="connector-66" startpinid="Tunnel-44-pin" endpinid="Led-2-lPin" pointList="500,492,500,524" />
+<item itemtype="Connector" uid="connector-66" startpinid="Tunnel-44-pin" endpinid="Led-2-lPin" pointList="496,488,496,520" />
 
 <item itemtype="Connector" uid="connector-67" startpinid="AudioOut-51-lPin" endpinid="Uno-1-8" pointList="884,488,884,576,812,576" />
 
