@@ -13,11 +13,6 @@
   <img src="imagens/circuito-simulide.png" width="600" alt="Circuito no SimulIDE">
 </p>
 
-<p align="center">
-  <!-- Exemplo de imagem (troque quando tiver o arquivo) -->
-  <!-- <img src="imagens/circuito-simulide.png" width="350" alt="Simulação no SimulIDE"> -->
-</p>
-
 ---
 
 ## 📌 Descrição do Projeto
@@ -96,14 +91,16 @@ um buzzer para alarme sonoro e um LED indicador. Um botão permite armar e desar
 
 ## 📊 Metas e Indicadores
 
-- **Meta 1:** Protótipo funcional até 20/10  
-  - Sistema arma/desarma e aciona buzzer corretamente  
-- **Meta 2:** Validação com a comunidade até 25/10  
-  - Mínimo de 70% de feedback positivo  
-- **Meta 3:** Relatório final até 10/11  
-  - Documentação validada pelo docente  
+- **Meta 1:** Protótipo funcional no SimulIDE até 20/10  
+  - Indicador: sistema arma/desarma e aciona o buzzer corretamente
+
+- **Meta 2:** Código final revisado até 05/11  
+  - Indicador: firmware funcionando sem erros na simulação
+
+- **Meta 3:** Relatório final entregue até 10/11  
+  - Indicador: documentação completa e aprovada pelo docente
+
 
 ---
 
-## 📁 Estrutura do Repositório (sugerida)
 
