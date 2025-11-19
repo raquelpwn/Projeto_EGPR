@@ -1,6 +1,5 @@
 #  Projeto EGPR - Sistema de Segurança Comercial 
 
-
 <p align="center">
   Protótipo funcional de um sistema de alarme para portas e janelas, desenvolvido com Arduino UNO,
   sensores magnéticos (reed switch) e buzzer, totalmente simulado no SimulIDE.
@@ -8,7 +7,6 @@
 
 <br>
 
-<!-- Imagem do circuito -->
 <p align="center">
   <img src="imagens/circuito-simulide.png" width="600" alt="Circuito no SimulIDE">
 </p>
@@ -20,7 +18,7 @@
 <p>
 Este projeto tem como objetivo desenvolver um sistema de segurança simples, acessível e de fácil implementação,
 voltado para ambientes comerciais e residenciais. O sistema emite um alarme ao detectar a abertura indevida de portas
-ou janelas, utilizando sensores magnéticos e um buzzer. Todo o desenvolvimento foi realizado através do SimulIDE e Arduino IDE.
+ou janelas, utilizando sensores magnéticos e um buzzer. Todo o desenvolvimento foi realizado no SimulIDE e Arduino IDE.
 </p>
 
 ---
@@ -29,6 +27,7 @@ ou janelas, utilizando sensores magnéticos e um buzzer. Todo o desenvolvimento 
 
 - Desenvolver a arquitetura do sistema utilizando microcontroladores.
 - Criar o firmware em Arduino IDE para controle de sensores e atuadores.
+- Produzir as primeiras versões do firmware e realizar evoluções até a versão final.
 - Simular o funcionamento completo do circuito no SimulIDE.
 - Validar o comportamento do sistema com membros da comunidade.
 
@@ -44,7 +43,6 @@ ou janelas, utilizando sensores magnéticos e um buzzer. Todo o desenvolvimento 
   <img src="https://img.shields.io/badge/Google%20Drive-Docs-34A853?logo=googledrive&logoColor=white">
   <img src="https://img.shields.io/badge/WhatsApp-Communication-25D366?logo=whatsapp&logoColor=white">
 </p>
-
 
 ---
 
@@ -72,7 +70,8 @@ um buzzer para alarme sonoro e um LED indicador. Um botão permite armar e desar
 | Levantamento de requisitos | Guilherme | 08/09 – 15/09 | Documento de requisitos |
 | Modelagem da arquitetura | Pamella e Renylle | 15/09 – 05/10 | Diagramas |
 | Definição dos sensores/atuadores | Pamella e Guilherme | 01/10 – 08/10 | Lista definida |
-| Programação do firmware | Pamella | 05/10 – 15/10 | Código-fonte |
+| Programação do firmware (v1 – v1.3) | Pamella | 05/10 – 15/10 | Primeiras versões do código |
+| Programação da versão final do firmware | Pamella | 15/10 – 20/10 | Código final |
 | Simulação no SimulIDE | Pamella | 10/10 – 20/10 | Arquivo .simu |
 | Registro de testes | Guilherme e Renylle | 15/10 – 22/10 | Relatório |
 | Validação com a comunidade | Guilherme e Renylle | 20/10 – 25/10 | Feedback |
@@ -83,9 +82,9 @@ um buzzer para alarme sonoro e um LED indicador. Um botão permite armar e desar
 
 ## 👥 Equipe
 
-- **Pamella Raquel** — Arquitetura, simulação e programação 
-- **Renylle Rolim** — Relatórios, documentação 
-- **Guilherme Apolonio** — Comunicação com a comunidade  
+- **Pamella Raquel** — Arquitetura do sistema, definições técnicas, primeiras versões do firmware, firmware final e simulação  
+- **Renylle Rolim** — Relatórios, documentação e apoio na arquitetura  
+- **Guilherme Apolonio** — Comunicação com a comunidade e requisitos  
 
 ---
 
@@ -99,8 +98,3 @@ um buzzer para alarme sonoro e um LED indicador. Um botão permite armar e desar
 
 - **Meta 3:** Relatório final entregue até 10/11  
   - Indicador: documentação completa e aprovada pelo docente
-
-
----
-
-
